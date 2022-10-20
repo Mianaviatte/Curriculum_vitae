@@ -1,0 +1,176 @@
+/* tag typed styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f7fa;
+    margin: 40px;
+
+    /* text-transform: none | uppercase | lowercase | capitalize */
+    /* text-decoration: none | underline | line-through | overline */
+}
+
+aside { 
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: 90px;
+    background-color: #092B5B;
+}
+
+img {
+    object-fit: contain;
+    width: 380px;
+}
+
+h1 {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    color: #000000;
+}
+
+h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    color: #A8A8A8;
+    padding: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595959;
+}
+
+ol > li {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 20px;
+}
+
+ul > li {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595959;
+    margin-left: 20px;
+}
+
+a, span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #595959;
+}
+
+/* class typed styles */
+
+.background {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+}
+
+.about {
+    padding-top: 100px;
+    width: 400px;
+}
+
+.projects {
+    padding: 40px 0;
+}
+
+.work, .company  {
+    padding: 10px 0;
+}
+
+.company > p {
+    font-weight: 700;
+    color: #000000;
+}
+
+.organization {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: #FB6D3A;
+}
+
+.education {
+    padding: 40px 10px;    
+}
+
+.education > .company > h4 {
+    color: #FB6D3A;
+}
+
+.sidebar {
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.sidebar > h3 { 
+    color: #ffffff;
+}
+
+.sidebar > div > p {
+    color: #ffffff;
+}
+
+.sidebar > div > p > a {
+    color: #6284b8;
+}
+
+.sidebar > ul > li {
+    color: #FB6D3A;
+}
+
+.sidebar > ul > li > span {
+    color: #ffffff;
+}
