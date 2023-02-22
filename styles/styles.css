@@ -8,7 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f7fa;
-    margin: 40px;
+    margin: 10px;
 
     /* text-transform: none | uppercase | lowercase | capitalize */
     /* text-decoration: none | underline | line-through | overline */
@@ -109,16 +109,20 @@ a, span {
 
 .background {
     background-color: #ffffff;
+    background-position: 0 0;
     display: flex;
     flex-direction: row;
     width: 1200px;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    margin: 100px auto;
+    margin: auto;
+}
+
+.main {
+    width: 500px;
 }
 
 .about {
-    padding-top: 100px;
-    width: 400px;
+    padding-top: 100px;    
 }
 
 .about > p {
