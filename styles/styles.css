@@ -5,103 +5,139 @@
     box-sizing: border-box;
 }
 
+/* Extra small devices (phones, 420px and down) */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f7fa;
-    margin: 10px;
-
-    /* text-transform: none | uppercase | lowercase | capitalize */
-    /* text-decoration: none | underline | line-through | overline */
+    max-width: 100% ;
+    max-height: 100%;
+    margin: auto;    
 }
 
+/* Small devices (portrait tablets and large phones, 420px and up) */
+@media only screen and (min-width: 420px) {
+    body {
+        max-width: 90% ;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        max-width: 80% ;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        max-width: 70% ;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+
 aside { 
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-right: 90px;
+    max-width: 40%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-right: 5%;
     background-color: #000000;
 }
 
 img {
     object-fit: contain;
-    width: 380px;
-    margin: 20px;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 3vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 55px;
+    line-height: calc(1.2rem + .5vh);
     color: #000000;
-    margin: 20px 0;
+    margin: 5% 0;
+    max-width: 80%;
 }
 
 h2 {
-    font-size: 14px;
+    font-size: 2.5vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 17px;
+    line-height: 3vh;
     color: #000000;
+    max-width: 80%;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 1.4vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 1.6vh;
     color: #000000;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
+    max-width: 80%;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 1.2vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.4vh;
     color: #000000;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
+    max-width: 80%;
 }
 
 h5 {
-    font-size: 12px;
+    font-size: .8vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 1vh;
     color: #A8A8A8;
-    padding: 10px 0;
+    padding: 2% 0;
+    max-width: 80%;
 }
 
 p {
-    font-size: 14px;
+    font-size: 1vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.2vh;
     color: #595959;
+    max-width: 80%;
 }
 
 ol > li {
-    font-size: 14px;
+    font-size: 1vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.2vh;
     color: #000000;
-    margin-left: 20px;
+    margin-left: 10%;
+    max-width: 80%;
 }
 
 ul > li {
-    font-size: 14px;
+    font-size: 1vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.2vh;
     color: #595959;
-    margin-left: 20px;
+    margin-left: 10%;
+    max-width: 80%;
 }
 
 a, span {
-    font-size: 14px;
+    font-size: 1vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.2vh;
     color: #595959;
 }
 
@@ -112,29 +148,30 @@ a, span {
     background-position: 0 0;
     display: flex;
     flex-direction: row;
-    width: 1200px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 99%;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.1);
     margin: auto;
 }
 
 .main {
-    width: 500px;
+    width: 90%;
+    padding-bottom: 2em;
 }
 
 .about {
-    padding-top: 100px;    
+    padding-top: 15%;    
 }
 
 .about > p {
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .projects {
-    padding: 40px 0;
+    padding: 10% 0;
 }
 
-.work, .company  {
-    padding: 10px 0;
+.work, .company, .education {
+    padding: 5% 0;
 }
 
 .company > p {
@@ -143,15 +180,11 @@ a, span {
 }
 
 .organization {
-    font-size: 16px;
+    font-size: 1vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.2vh;
     color: #FB6D3A;
-}
-
-.education {
-    padding: 40px 10px;    
 }
 
 .education > .company > h4 {
@@ -159,8 +192,9 @@ a, span {
 }
 
 .sidebar {
-    padding-top: 50px;
-    padding-left: 40px;
+    padding-top: 5%;
+    padding-left: 5%;
+    margin-bottom: 10%;
 }
 
 .sidebar > h3 { 
@@ -168,21 +202,24 @@ a, span {
 }
 
 .sidebar > div {
-    margin-top: 10px;
+    margin-bottom: 10%;
 }
 
-.sidebar > #intro {
-    color: #ffffff;
-    width: 350px;
+#intro {
+    /* color: #ffffff; */
+    max-width: 90%;
+    text-align: justify;
 }
 
 .sidebar > div > p {
     color: #ffffff;
-    padding-top: 20px;
+    padding-top: 1%;
+    max-width: 90%;
 }
 
 .sidebar > div > p > a, a {
     color: #6284b8;
+    max-width: 90%;
 }
 
 .sidebar > ul > li {

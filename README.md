@@ -1,4 +1,8 @@
-# CV for Mianaviatte
+# CV for Mianaviatte  
+
+* mobile-friendly  
+* responsive  
+* sidebar and main  
 
 [Deployed CV on Netlify](https://mianaviatte-cv.netlify.app/)  
   
