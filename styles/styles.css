@@ -3,105 +3,150 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    box-orient: horizontal;
 }
 
+/* Extra small devices (phones, 420px and down) */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f7fa;
-    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
-    /* text-transform: none | uppercase | lowercase | capitalize */
-    /* text-decoration: none | underline | line-through | overline */
+/* Small devices (portrait tablets and large phones, 420px and up) */
+@media only screen and (min-width: 420px) {
+    body {
+        
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        margin: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: auto ;
+    }
 }
 
 aside { 
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-right: 90px;
+    min-width: 30%;
+    max-width: 40%;
+    height: 100%;
+    padding-top: 2em;
+    margin-left: 5%;
+    position: sticky;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: #000000;
 }
 
 img {
-    object-fit: contain;
-    width: 380px;
-    margin: 20px;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
 }
 
 h1 {
-    font-size: 45px;
     font-style: normal;
+    font-size: xxx-large;
     font-weight: 700;
-    line-height: 55px;
     color: #000000;
-    margin: 20px 0;
+    margin: 5% 0;
+    max-width: 80%;
 }
 
 h2 {
-    font-size: 14px;
     font-style: normal;
+    font-size: xx-large;
     font-weight: 700;
-    line-height: 17px;
     color: #000000;
+    max-width: 80%;
 }
 
 h3 {
-    font-size: 22px;
     font-style: normal;
+    font-size: x-large;
     font-weight: 700;
-    line-height: 27px;
     color: #000000;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
+    max-width: 80%;
 }
 
 h4 {
-    font-size: 16px;
     font-style: normal;
+    font-size: medium;     
     font-weight: 700;
-    line-height: 20px;
     color: #000000;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
+    max-width: 80%;
 }
 
 h5 {
-    font-size: 12px;
     font-style: normal;
+    font-size: x-small;
     font-weight: 400;
-    line-height: 15px;
     color: #A8A8A8;
-    padding: 10px 0;
+    padding: 2% 0;
+    max-width: 80%;
 }
 
 p {
-    font-size: 14px;
     font-style: normal;
+    font-size: small;
     font-weight: 400;
-    line-height: 24px;
     color: #595959;
+    max-width: 80%;
+    line-height: 150%;
+}
+
+ol, ul {
+    margin-top: 5%;
 }
 
 ol > li {
-    font-size: 14px;
     font-style: normal;
+    font-size: small;
     font-weight: 700;
-    line-height: 24px;
     color: #000000;
-    margin-left: 20px;
+    margin-left: 10%;
+    max-width: 80%;
+    line-height: 150%;
 }
 
 ul > li {
-    font-size: 14px;
     font-style: normal;
+    font-size: small;
     font-weight: 400;
-    line-height: 24px;
     color: #595959;
-    margin-left: 20px;
+    margin-left: 10%;
+    max-width: 80%;
+    line-height: 150%;
 }
 
 a, span {
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
     color: #595959;
 }
 
@@ -109,32 +154,42 @@ a, span {
 
 .background {
     background-color: #ffffff;
-    background-position: 0 0;
     display: flex;
-    flex-direction: row;
-    width: 1200px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    margin: auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
 }
 
 .main {
-    width: 500px;
+    width: 90%;
+    height: 100%;
+    padding-bottom: 2em;
+}
+
+.avatar {
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -2rem -1rem 5rem rgb(255, 255, 255, .7);
+}
+
+.badge {
+    margin-left: 5%;
+    margin-top: 5%;
+    min-width: 90%;
 }
 
 .about {
-    padding-top: 100px;    
+    padding-top: 15%;    
+    padding-bottom: 5%;
 }
 
 .about > p {
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
-.projects {
-    padding: 40px 0;
-}
-
-.work, .company  {
-    padding: 10px 0;
+.projects, .work, .company, .education {
+    padding: 5% 0;
 }
 
 .company > p {
@@ -143,15 +198,9 @@ a, span {
 }
 
 .organization {
-    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
     color: #FB6D3A;
-}
-
-.education {
-    padding: 40px 10px;    
 }
 
 .education > .company > h4 {
@@ -159,8 +208,9 @@ a, span {
 }
 
 .sidebar {
-    padding-top: 50px;
-    padding-left: 40px;
+    padding-top: 5%;
+    padding-left: 5%;
+    margin-bottom: 10%;
 }
 
 .sidebar > h3 { 
@@ -168,21 +218,23 @@ a, span {
 }
 
 .sidebar > div {
-    margin-top: 10px;
+    margin: 10%;
 }
 
-.sidebar > #intro {
-    color: #ffffff;
-    width: 350px;
+#intro {
+    max-width: 90%;
+    text-align: left;
 }
 
 .sidebar > div > p {
     color: #ffffff;
-    padding-top: 20px;
+    padding-top: 1%;
+    max-width: 90%;
 }
 
 .sidebar > div > p > a, a {
     color: #6284b8;
+    max-width: 90%;
 }
 
 .sidebar > ul > li {
