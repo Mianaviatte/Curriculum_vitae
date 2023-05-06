@@ -3,28 +3,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    box-orient: horizontal;
 }
 
 /* Extra small devices (phones, 420px and down) */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f7fa;
-    max-width: 100% ;
-    max-height: 100%;
-    margin: auto;    
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 /* Small devices (portrait tablets and large phones, 420px and up) */
 @media only screen and (min-width: 420px) {
     body {
-        max-width: 90% ;
+        
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        max-width: 80% ;
+
     }
 }
 
@@ -32,112 +35,118 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body {
-        max-width: 70% ;
+        margin: auto;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
-
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: auto ;
+    }
+}
 
 aside { 
+    min-width: 30%;
     max-width: 40%;
+    height: 100%;
     padding-top: 2em;
-    padding-bottom: 2em;
-    margin-right: 5%;
+    margin-left: 5%;
+    position: sticky;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: #000000;
 }
 
 img {
-    object-fit: contain;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 90%;
-    margin-left: 5%;
 }
 
 h1 {
-    font-size: 3vh;
     font-style: normal;
+    font-size: xxx-large;
     font-weight: 700;
-    line-height: calc(1.2rem + .5vh);
     color: #000000;
     margin: 5% 0;
     max-width: 80%;
 }
 
 h2 {
-    font-size: 2.5vh;
     font-style: normal;
+    font-size: xx-large;
     font-weight: 700;
-    line-height: 3vh;
     color: #000000;
     max-width: 80%;
 }
 
 h3 {
-    font-size: 1.4vh;
     font-style: normal;
+    font-size: x-large;
     font-weight: 700;
-    line-height: 1.6vh;
     color: #000000;
     padding-bottom: 2%;
     max-width: 80%;
 }
 
 h4 {
-    font-size: 1.2vh;
     font-style: normal;
+    font-size: medium;     
     font-weight: 700;
-    line-height: 1.4vh;
     color: #000000;
     padding-bottom: 2%;
     max-width: 80%;
 }
 
 h5 {
-    font-size: .8vh;
     font-style: normal;
+    font-size: x-small;
     font-weight: 400;
-    line-height: 1vh;
     color: #A8A8A8;
     padding: 2% 0;
     max-width: 80%;
 }
 
 p {
-    font-size: 1vh;
     font-style: normal;
+    font-size: small;
     font-weight: 400;
-    line-height: 1.2vh;
     color: #595959;
     max-width: 80%;
+    line-height: 150%;
+}
+
+ol, ul {
+    margin-top: 5%;
 }
 
 ol > li {
-    font-size: 1vh;
     font-style: normal;
+    font-size: small;
     font-weight: 700;
-    line-height: 1.2vh;
     color: #000000;
     margin-left: 10%;
     max-width: 80%;
+    line-height: 150%;
 }
 
 ul > li {
-    font-size: 1vh;
     font-style: normal;
+    font-size: small;
     font-weight: 400;
-    line-height: 1.2vh;
     color: #595959;
     margin-left: 10%;
     max-width: 80%;
+    line-height: 150%;
 }
 
 a, span {
-    font-size: 1vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.2vh;
     color: #595959;
 }
 
@@ -145,32 +154,41 @@ a, span {
 
 .background {
     background-color: #ffffff;
-    background-position: 0 0;
     display: flex;
-    flex-direction: row;
-    max-width: 99%;
-    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.1);
-    margin: auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
 }
 
 .main {
     width: 90%;
+    height: 100%;
     padding-bottom: 2em;
+}
+
+.avatar {
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: -2rem -1rem 5rem rgb(255, 255, 255, .7);
+}
+
+.badge {
+    margin-left: 5%;
+    margin-top: 5%;
+    min-width: 90%;
 }
 
 .about {
     padding-top: 15%;    
+    padding-bottom: 5%;
 }
 
 .about > p {
     margin-top: 5%;
 }
 
-.projects {
-    padding: 10% 0;
-}
-
-.work, .company, .education {
+.projects, .work, .company, .education {
     padding: 5% 0;
 }
 
@@ -180,10 +198,8 @@ a, span {
 }
 
 .organization {
-    font-size: 1vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.2vh;
     color: #FB6D3A;
 }
 
@@ -202,13 +218,12 @@ a, span {
 }
 
 .sidebar > div {
-    margin-bottom: 10%;
+    margin: 10%;
 }
 
 #intro {
-    /* color: #ffffff; */
     max-width: 90%;
-    text-align: justify;
+    text-align: left;
 }
 
 .sidebar > div > p {
