@@ -6,7 +6,6 @@
     box-orient: horizontal;
 }
 
-/* Extra small devices (phones, 420px and down) */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f7fa;
@@ -17,10 +16,95 @@ body {
     flex-wrap: wrap;
 }
 
+aside { 
+    min-width: 24%;
+    max-width: 36%;
+    height: 100%;
+    padding-top: 2em;
+    margin-left: 4%;
+    position: sticky;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+}
+
+img {
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+}
+
+/* Extra small devices (phones, 420px and down) */
+@media only screen and (max-width: 420px) {
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    h5, p {
+        font-size: 3vw;
+    }
+
+    ol > li {
+        font-size: 3vw;
+    }
+
+    ul > li {
+        font-size: 3vw;
+    }
+
+}
+
 /* Small devices (portrait tablets and large phones, 420px and up) */
 @media only screen and (min-width: 420px) {
     body {
         width: 100%;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    h5, p {
+        font-size: 2vw;
+    }
+
+    ol > li {
+        font-size: 2vw;
+    }
+
+    ul > li {
+        font-size: 2vw;
     }
 }
 
@@ -28,6 +112,34 @@ body {
 @media only screen and (min-width: 768px) {
     body {
         width: 100%;
+    }
+
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    h4 {
+        font-size: medium;  
+    }
+
+    h5, p {
+        font-size: small;
+    }
+
+    ol > li {
+        font-size: small;
+    }
+
+    ul > li {
+        font-size: small;
     }
 }
 
@@ -37,6 +149,34 @@ body {
     body {
         margin: auto;
         width: 90%;
+    }
+
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    h4 {
+        font-size: medium;  
+    }
+
+    h5, p {
+        font-size: small;
+    }
+
+    ol > li {
+        font-size: small;
+    }
+
+    ul > li {
+        font-size: small;
     }
 }
 
@@ -54,41 +194,47 @@ body {
         margin: auto ;
         width: 70%;
     }
+
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    h4 {
+        font-size: medium;  
+    }
+
+    h5, p {
+        font-size: small;
+    }
+
+    ol > li {
+        font-size: small;
+    }
+
+    ul > li {
+        font-size: small;
+    }
 }
 
-aside { 
-    min-width: 30%;
-    max-width: 40%;
-    height: 100%;
-    padding-top: 2em;
-    margin-left: 5%;
-    position: sticky;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #000000;
-}
-
-img {
-    /* margin: auto; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 90%;
-}
 
 h1 {
     font-style: normal;
-    font-size: xxx-large;
     font-weight: 700;
     color: #000000;
-    margin: 5% 0;
+    margin: 4% 0;
     max-width: 80%;
 }
 
 h2 {
     font-style: normal;
-    font-size: xx-large;
     font-weight: 700;
     color: #000000;
     max-width: 80%;
@@ -96,7 +242,6 @@ h2 {
 
 h3 {
     font-style: normal;
-    font-size: x-large;
     font-weight: 700;
     color: #000000;
     padding-bottom: 1%;
@@ -104,8 +249,7 @@ h3 {
 }
 
 h4 {
-    font-style: normal;
-    font-size: medium;     
+    font-style: normal; 
     font-weight: 700;
     color: #000000;
     padding-bottom: 1%;
@@ -114,7 +258,6 @@ h4 {
 
 h5 {
     font-style: normal;
-    font-size: x-small;
     font-weight: 400;
     color: #A8A8A8;
     padding: 1% 0;
@@ -123,7 +266,6 @@ h5 {
 
 p {
     font-style: normal;
-    font-size: small;
     font-weight: 400;
     color: #595959;
     max-width: 80%;
@@ -137,20 +279,18 @@ ol, ul {
 
 ol > li {
     font-style: normal;
-    font-size: small;
     font-weight: 700;
     color: #000000;
-    margin-left: 10%;
+    margin-left: 8%;
     max-width: 80%;
     line-height: 160%;
 }
 
 ul > li {
     font-style: normal;
-    font-size: small;
     font-weight: 400;
     color: #595959;
-    margin-left: 10%;
+    margin-left: 8%;
     max-width: 80%;
     line-height: 160%;
 }
@@ -169,12 +309,12 @@ a, span {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 5%;
+    padding-left: 4%;
     width: 100%;
 }
 
 .main {
-    min-width: 70%;
+    min-width: 60%;
     max-width: 90%;
     height: 100%;
     padding-bottom: 2em;
@@ -182,6 +322,7 @@ a, span {
 
 .avatar {
     margin: auto;
+    margin-bottom: 2em;
     border-radius: 50%;
     box-shadow: -2rem -1rem 5rem rgb(255, 255, 255, .7);
 }
@@ -194,16 +335,16 @@ a, span {
 }
 
 .about {
-    padding-top: 15%;    
-    padding-bottom: 5%;
+    padding-top: 12%;    
+    padding-bottom: 2%;
 }
 
 .about > p {
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 .projects, .work, .company, .education {
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 .company > p {
@@ -226,9 +367,9 @@ a, span {
 }
 
 .sidebar {
-    padding-top: 5%;
-    padding-left: 5%;
-    margin-bottom: 10%;
+    padding-top: 2%;
+    padding-left: 2%;
+    margin-bottom: 6%;
 }
 
 .sidebar > h3 { 
@@ -236,7 +377,7 @@ a, span {
 }
 
 .sidebar > div {
-    margin: 10%;
+  margin: 10%;
 }
 
 #intro {
@@ -248,12 +389,12 @@ a, span {
 .sidebar > div > p {
     color: #ffffff;
     padding-top: 1%;
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .sidebar > div > p > a, a {
     color: #6284b8;
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .sidebar > ul > li {
