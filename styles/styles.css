@@ -148,6 +148,7 @@ img {
 @media only screen and (min-width: 992px) {
     body {
         margin: auto;
+        width: 90%;
     }
 
     h1 {
@@ -183,6 +184,15 @@ img {
 @media only screen and (min-width: 1200px) {
     body {
         margin: auto ;
+        width: 75%;
+    }
+}
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+    body {
+        margin: auto ;
+        width: 70%;
     }
 
     h1 {
@@ -259,11 +269,12 @@ p {
     font-weight: 400;
     color: #595959;
     max-width: 80%;
-    line-height: 140%;
+    line-height: 160%;
+    margin: 3% 0;
 }
 
 ol, ul {
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 ol > li {
@@ -272,7 +283,7 @@ ol > li {
     color: #000000;
     margin-left: 8%;
     max-width: 80%;
-    line-height: 140%;
+    line-height: 160%;
 }
 
 ul > li {
@@ -281,7 +292,7 @@ ul > li {
     color: #595959;
     margin-left: 8%;
     max-width: 80%;
-    line-height: 140%;
+    line-height: 160%;
 }
 
 a, span {
@@ -317,8 +328,9 @@ a, span {
 }
 
 .badge {
-    margin-left: 4%;
-    margin-top: 4%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     min-width: 90%;
 }
 
@@ -337,7 +349,7 @@ a, span {
 
 .company > p {
     font-weight: 700;
-    color: #000000;
+    margin: 1% 0;
 }
 
 .organization {
@@ -348,6 +360,10 @@ a, span {
 
 .education > .company > h4 {
     color: #FB6D3A;
+}
+
+.education > .company > p {
+    margin: 1% 0;
 }
 
 .sidebar {
@@ -361,7 +377,13 @@ a, span {
 }
 
 .sidebar > div {
-    margin: 6%;
+  margin: 10%;
+}
+
+#intro {
+    max-width: 90%;
+    text-align: left;
+    margin: 3% 0;
 }
 
 .sidebar > div > p {
