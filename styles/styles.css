@@ -374,10 +374,11 @@ a, span {
 
 .sidebar > h3 { 
     color: #ffffff;
+    padding-left: 2%;
 }
 
 .sidebar > div {
-  margin: 10%;
+  margin: 5%;
 }
 
 #intro {
