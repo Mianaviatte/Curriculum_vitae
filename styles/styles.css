@@ -328,11 +328,8 @@ a, span {
     box-shadow: -2rem -1rem 5rem rgb(255, 255, 255, .7);
 }
 
-.badge {
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    min-width: 90%;
+#moon {
+ margin-top: 4%;   
 }
 
 .about {
