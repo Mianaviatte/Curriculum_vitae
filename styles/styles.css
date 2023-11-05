@@ -1,5 +1,14 @@
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --text-shadow-color: #A8A8A8;
+    --accent-color: #FB6D3A;
+    --secondary-accent-color: #6284b8;
+    --primary-white-color: #ffffff;
+  }
 
-* {
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +17,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5f7fa;
+    background-color: var(--primary-white-color);
     display: flex;
     flex-direction: row;
     align-content: flex-start;
@@ -16,7 +25,7 @@ body {
     flex-wrap: wrap;
 }
 
-aside { 
+aside {
     min-width: 24%;
     max-width: 36%;
     height: 100%;
@@ -26,7 +35,7 @@ aside {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #000000;
+    background-color:var(--title-text-color);
 }
 
 img {
@@ -126,7 +135,7 @@ img {
     }
 
     h4 {
-        font-size: medium;  
+        font-size: medium;
     }
 
     h5, p {
@@ -163,7 +172,7 @@ img {
     }
 
     h4 {
-        font-size: medium;  
+        font-size: medium;
     }
 
     h5, p {
@@ -207,7 +216,7 @@ img {
     }
 
     h4 {
-        font-size: medium;  
+        font-size: medium;
     }
 
     h5, p {
@@ -227,7 +236,7 @@ img {
 h1 {
     font-style: normal;
     font-weight: 700;
-    color: #000000;
+    color: var(--primary-text-color);
     margin: 6% 0;
     max-width: 80%;
 }
@@ -236,7 +245,7 @@ h2 {
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
-    color: #000000;
+    color: var(--primary-text-color);
     margin: 4% 0;
     max-width: 80%;
 }
@@ -244,15 +253,15 @@ h2 {
 h3 {
     font-style: normal;
     font-weight: 700;
-    color: #000000;
+    color: var(--primary-text-color);
     padding-bottom: 1%;
     max-width: 80%;
 }
 
 h4 {
-    font-style: normal; 
+    font-style: normal;
     font-weight: 700;
-    color: #000000;
+    color: var(--primary-text-color);
     padding-bottom: 1%;
     max-width: 80%;
 }
@@ -268,7 +277,7 @@ h5 {
 p {
     font-style: normal;
     font-weight: 400;
-    color: #595959;
+    color: var(--text-shadow-color);
     max-width: 80%;
     line-height: 160%;
     margin: 3% 0;
@@ -281,7 +290,7 @@ ol, ul {
 ol > li {
     font-style: normal;
     font-weight: 700;
-    color: #000000;
+    color: var(--primary-text-color);
     margin-left: 8%;
     max-width: 80%;
     line-height: 160%;
@@ -290,7 +299,7 @@ ol > li {
 ul > li {
     font-style: normal;
     font-weight: 400;
-    color: #595959;
+    color: var(--text-shadow-color);
     margin-left: 8%;
     max-width: 80%;
     line-height: 160%;
@@ -299,13 +308,13 @@ ul > li {
 a, span {
     font-style: normal;
     font-weight: 400;
-    color: #595959;
+    color: var(--text-shadow-color);
 }
 
 /* class typed styles */
 
 .background {
-    background-color: #ffffff;
+    background-color: var(--primary-white-color);
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -330,11 +339,11 @@ a, span {
 }
 
 #moon {
- margin-top: 10%;   
+ margin-top: 10%;
 }
 
 .about {
-    padding-top: 12%;    
+    padding-top: 12%;
     padding-bottom: 2%;
 }
 
@@ -359,11 +368,11 @@ a, span {
 .organization {
     font-style: normal;
     font-weight: 700;
-    color: #FB6D3A;
+    color: var(--accent-color);
 }
 
 .education > .company > h4 {
-    color: #FB6D3A;
+    color: var(--accent-color);
 }
 
 .education > .company > p {
@@ -376,8 +385,8 @@ a, span {
     margin-bottom: 6%;
 }
 
-.sidebar > h3 { 
-    color: #ffffff;
+.sidebar > h3 {
+    color: var(--primary-white-color);
     padding-left: 2%;
 }
 
@@ -392,20 +401,20 @@ a, span {
 }
 
 .sidebar > div > p {
-    color: #ffffff;
+    color: var(--primary-white-color);
     padding-top: 1%;
     max-width: 80%;
 }
 
 .sidebar > div > p > a, a {
-    color: #6284b8;
+    color: var(--secondary-accent-color);
     max-width: 80%;
 }
 
 .sidebar > ul > li {
-    color: #FB6D3A;
+    color: var(--accent-color);
 }
 
 .sidebar > ul > li > span {
-    color: #ffffff;
+    color: var(--primary-white-color);
 }

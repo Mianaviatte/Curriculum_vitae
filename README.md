@@ -1,10 +1,8 @@
-# CV for Mianaviatte  
+# CV for Mianaviatte
 
-* mobile-friendly  
+* mobile-friendly
 * responsive design
 * useful links attached as badges
-* sticky sidebar and main content  
-* my own illustration as avatar and favicon  
+* sticky sidebar and main content
+* my own illustration as avatar and favicon
 * future projects will be added soon
-  
-![CV_Screenshot](img/screenshot_intro.jpg)
