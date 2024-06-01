@@ -1,4 +1,4 @@
-# CV for Mianaviatte
+# Curriculum vitae for Mianaviatte
 
 * 📱 mobile-friendly & responsive design 
 * 💻 sticky sidebar and dynamic main content 
@@ -8,4 +8,3 @@
 
 * ✅ certificates & interests added 
 * ♻️ future projects will be added soon 
-
